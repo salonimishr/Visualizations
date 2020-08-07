@@ -1,1 +1,44 @@
+# Visualizations
+
+### In this time, as data is getting bigger and bigger, to get the insights of the data, visualization is first strategy to understand it. 
+### I made two different projects for visualizations. 
+
+### Tableaue Project
+In first project, I used Tableaue and its tools to get insight of accident related data. This has values from February 2016 to January 2020 from 49 states. 
+This dataset has 3 million records and 49 variables. It is in csv format. Variables has geospatial vaiables alongwith weather data. There were 9 boolean variables stating if 
+this condition was there or not, I pivoted these variables into one and used bar graph along with line graph to explore the data better. Firstly, I used map to represent the cities 
+with highest accidents and to understand how each city is doing in four years frame, I connected each city with line chart. I used inverted pyramid bar chart to understand the
+accident frequency and attached each state with CDC webpage, where we can see how accidents are one of the leading causes of death in 2017. For the description variable, I
+used word cloud to see which highways are associated with the accidents. For zipcodes, I used bar graph and used filters to get the information from which states, 
+the zipcodes belong. Tableaue's forecast option was used to forecast next year accidents with confidence bands. Different graphs were used and I interconnected them to get
+better insights. I also used extensions in this project. I had below conclusions from the above visualizations:
+* After looking at the visualization report strong association found between number of accidents and weather condition, traffic signals, interstate highways.
+* Some states are found more prone to the accidents.
+* Strong association is also observed between number of accidents  and month of years as well as time of the day.
+* It is concluded that most of the accidents happen:in the month of October, in the day-time, in the clear weather and in the 60 to 80F temperature.
+
+### Python Project
+I merged different datasets for this project, I downloaded from WHO website. In this dataset, there are 202 rows representing different countries. The data is of 
+the year 2017. Certain factors, like your sex, age, or income can influence your health, your risk for certain diseases, and your risk for being seriously affected by
+public health emergencies. The same is true for populations.1 Knowing a population’s characteristics, including their vulnerabilities and resources, can help public health 
+professionals determine possible effects of health problems or environmental conditions on disease trends and patterns over time and across locations.
+
+To solve this purpose visualizations tools and cluster analysis are used.
+Visualization tools: Animation, interactive visualizations, map, Sunburst, and other plots.
+For clustering, I used K-Means analysis with silhouette analysis.
+
+I used Folium, Matplotlib, Bokeh, Seaborn and Plotly libraries. I used plotly and folium for population density and median age of each age respectively. From plotly, I made
+sunburst which was interactive and  where each ray represent country to explore health life expectancy. I used grid chart for Maternal, perinatal and newborn health variables.
+Bubble graph, marginal scatter plot were used for different variables. To understand how poverty, population, literacy and health are interrelated to each other, so I explored
+it further by taking physician density vs adult mortality rate and how government expenditure on health across all countries in different continents affect each other. 
+I used animation for this. I found that as physician density increases adult mortality decreases moreover government health expenditure also reduces the adult mortality rate.
+Silhouette analysis can be used to study the separation distance between the resulting clusters. , I used “per capita government expenditure on health (PPP int. $)” vs “Adult
+mortality rate (probability of dying between 15 to 60 years per 1000 population” to find clustering. I found 4 clusters by silhouette analysis and took 4 clusters for further 
+analysis. By K-Means clustering, clustering of countries in between 4 clusters were given. Cluster 1 with very low government expenditure on health whereas cluster 4 has the
+highest. In cluster 1, most countries of Asia, Africa and South America is there. In cluster 2, there are many developed countries of North America, Australia and Europe but
+in cluster 3, Argentina, Poland, Lithuania, Estonia, Czech Republic, Slovakia, Latvia and Estonia are there. In cluster4, it is only Norway and its islands.
+
+
+
+
 
